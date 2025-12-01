@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>帳號買賣網站</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark py-3 px-lg-5 d-none d-lg-block">
+        <div class="row">
+            <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-body pr-3" href=""><i class="fa fa-phone-alt mr-2"></i>0989-188-906</a>
+                    <span class="text-body">|</span>
+                    <a class="text-body px-3" href=""><i class="fa fa-envelope mr-2"></i>s1093317@mail.yzu.edu.tw</a>
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-body px-3" href="https://www.facebook.com/profile.php?id=100006025894248">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-body pl-3" href="https://youtu.be/omOOGfivXQs">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="position-relative px-lg-5" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="text-uppercase text-primary mb-1">最安心的帳號交易網站</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="detail.html" class="nav-item nav-link active">Game Account</a>
+                        <a href="login.html" class="nav-item nav-link" id="loginLink">Login</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header">
+        <h1 class="display-3 text-uppercase text-white mb-3">Game Account</h1>
+        <div class="d-inline-flex text-white">
+            <h6 class="text-uppercase m-0"><a class="text-white" href="index.html">Home</a></h6>
+        </div>
+    </div>
+    <!-- Page Header Start -->
+
+
+    <!-- Start -->
+    <div class="container-fluid pb-5">
+        <div class="container pb-5">
+            <h1 class="mb-4">熱門遊戲帳號</h1>
+            <div class="owl-carousel related-carousel position-relative" style="padding: 0 30px;">
+                <div class="rent-item">
+                    <img class="img-fluid mb-4" src="img/default_Pro_1.jpg" alt="">
+                    <h4 class="text-uppercase mb-4">怪物彈珠寶珠號 1000/1500/2000顆</h4>
+                    <a class="btn btn-primary px-3" href="">$500/$700/$900</a>
+                </div>
+                <div class="rent-item">
+                    <img class="img-fluid mb-4" src="img/default_Pro_2.png" alt="">
+                    <h4 class="text-uppercase mb-4">Apex 全傳家寶 自選傳家寶1至多個 可細談</h4>
+                    <a class="btn btn-primary px-3" href="">$8000/$700起</a>
+                </div>
+                <div class="rent-item">
+                    <img class="img-fluid mb-4" src="img/default_Pro_3.png" alt="">
+                    <h4 class="text-uppercase mb-4">神魔之塔石頭號 150/200/300顆</h4>
+                    <a class="btn btn-primary px-3" href="">$500/$700/$900</a>
+                </div>
+                <div id="latestShowcaseContainer"></div>
+            </div>
+        </div>
+    </div>
+    <!-- End -->
+
+    <div class="container-fluid pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1 class="display-4 text-uppercase mb-5">管理你的商品</h1>
+                        <form id="pro_form">
+                            <div class="mb-5">
+                                <div class="row">
+                                    <div class="col-6 form-group">
+                                        <input type="text" id="product_name" class="form-control p-4" placeholder="商品名稱" required="required">
+                                    </div>
+                                    <div class="col-6 form-group">
+                                        <input type="text" id="product_price" class="form-control p-4" placeholder="預計售價" required="required">
+                                    </div>
+                                </div>
+                                <div class="col-6 form-group">
+                                    <label for="product_image">上傳您的圖片:</label>
+                                    <input type="file" class="form-control" id="product_image" required="required">
+                                </div>
+                                <button class="btn btn-primary py-md-3 px-md-5 mt-2" type="button" onclick="ManagePro(document.getElementById('product_name').value, document.getElementById('product_price').value, document.getElementById('product_image').files[0]); return false;">新增商品</button>
+                                <button class="btn btn-primary py-md-3 px-md-5 mt-2"type="button" onclick="UpdatePro(document.getElementById('product_name').value, document.getElementById('product_price').value); return false;">編輯價格</button>
+                                <button class="btn btn-primary py-md-3 px-md-5 mt-2"type="button" onclick="DeletePro(document.getElementById('product_name').value); return false;">刪除商品</button>
+                            </div>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start -->
+    <div class="container-fluid pt-5">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-lg-8 mb-5"> 
+                    <h1 class="display-4 text-uppercase mb-5">選擇你想購買的遊戲帳號</h1>
+                    <div class="row mx-n2 mb-3">
+                        <div class="col-md-3 col-6 px-2 pb-2">
+                            <img class="img-fluid w-100" src="img/gallery-1.jpg" alt="">
+                        </div>
+                        <div class="col-md-3 col-6 px-2 pb-2">
+                            <img class="img-fluid w-100" src="img/gallery-2.jpg" alt="">
+                        </div>
+                        <div class="col-md-3 col-6 px-2 pb-2">
+                            <img class="img-fluid w-100" src="img/gallery-3.jpg" alt="">
+                        </div>
+                        <div class="col-md-3 col-6 px-2 pb-2">
+                            <img class="img-fluid w-100" src="img/gallery-4.jpg" alt="">
+                        </div>
+                    </div>
+                    <p> 給予買賣雙方最安心的交易平台，在此你可以選擇你有興趣購買的遊戲以查看目前的最新價格。</p>
+                   
+               </div>
+
+                <div class="col-lg-4 mb-5">
+                    <div class="bg-secondary p-5">
+                        <h3 class="text-primary text-center mb-4">請選擇您的遊戲</h3>
+                        <div class="form-group">
+                            <select class="custom-select px-4" style="height: 50px;" id="productSelect">
+                                <option selected>請選擇遊戲</option>
+                                <option value="1">怪物彈珠寶珠號</option>
+                                <option value="2">Apex傳家寶號</option>
+                                <option value="3">神魔之塔石頭號</option>
+                            </select>
+                        </div>
+                        <div class="form-group mb-0">
+                            <button class="btn btn-primary btn-block" type="submit" style="height: 50px;">確定</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End -->
+
+    <!-- Start -->
+    <div class="container-fluid pt-5">
+        <div class="container pt-5 pb-3">
+            <h1 class="display-4 text-uppercase mb-5">本週佳作推薦</h1>
+            <div class="row align-items-center pb-2">
+                <div class="col-lg-6 mb-4">
+                    <img class="img-fluid" src="img/bg-banner.jpg" alt="">
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <h4 class="mb-2">遊戲售價：$1500/NT</h4>
+                    <div class="d-flex mb-3">
+                        <h6 class="mr-2">評價：</h6>
+                        <div class="d-flex align-items-center justify-content-center mb-1">
+                            <small class="fa fa-star text-primary mr-1"></small>
+                            <small class="fa fa-star text-primary mr-1"></small>
+                            <small class="fa fa-star text-primary mr-1"></small>
+                            <small class="fa fa-star text-primary mr-1"></small>
+                            <small class="fa fa-star-half-alt text-primary mr-1"></small>
+                            <small>(250)</small>
+                        </div>
+                    </div>
+                    <p>話題不斷的《寶可夢》系列最新作《寶可夢 朱／紫》已於 2022 年 11 月 18 日上市，遊戲採用系列首見開放世界玩法，不僅官方對這次發行的新作信心滿滿稱其為「系列最高成就」，遊戲上市三天全球銷量破千萬打破歷史新高紀錄，知名遊戲媒體 IGN 對該作給出評分，表示遊戲性歷代之最，但系統問題也是歷代最多。
+
+                        《寶可夢 朱紫》是系列繼前作《寶可夢 劍盾》上市以來睽違三年的新作，同時也是《寶可夢》系列第一款開放世界作品，承襲《寶可夢 阿爾宙斯》的經驗，這次《寶可夢 朱紫》雖然 BUG、卡頓問題不斷，但仍舊不影響遊戲龐大且豐富的內容本質，不少玩家盛讚內容確實好玩，即便問題多多但仍舊不影響遊戲體驗。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End -->
+
+     <!-- Booking Start -->
+     <div class="container-fluid pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2 class="mb-4">訂購人資訊</h2>
+                    <div class="mb-5">
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <input type="text" class="form-control p-4" id="firstname" placeholder="姓氏" required="required">
+                            </div>
+                            <div class="col-6 form-group">
+                                <input type="text" class="form-control p-4" id="lastname" placeholder="名" required="required">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <input type="email" class="form-control p-4" id="email" placeholder="Email" required="required">
+                            </div>
+                            <div class="col-6 form-group">
+                                <input type="text" class="form-control p-4" id="phone" placeholder="手機號碼" required="required">
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="mb-4">付款資訊</h2>
+                    <div class="mb-5">
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <select class="custom-select px-4" id="city" style="height: 50px;">
+                                    <option selected>選擇縣市</option>
+                                    <option value="1">台北市</option>
+                                    <option value="2">桃園市</option>
+                                    <option value="3">新竹市</option>
+                                </select>
+                            </div>
+                            <div class="col-6 form-group">
+                                <input type="text" class="form-control p-4" id="address" placeholder="地址" required="required">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <input type="text" class="form-control p-4" placeholder="信用卡卡號" required="required">
+                            </div>
+                            <div class="col-6 form-group">
+                                <input type="text" class="form-control p-4" placeholder="到期月/年" required="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control py-3 px-4" id="note" rows="3" placeholder="備註" required="required"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-secondary p-5 mb-5">
+                        <h2 class="text-primary mb-4">選擇付款方式</h2>
+                        <div class="form-group">
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" name="payment" id="credit_card">
+                                <label class="custom-control-label" for="credit_card">信用卡</label>
+                        </div>
+                        <div class="form-group">
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" name="payment" id="mobile_payment">
+                                <label class="custom-control-label" for="mobile_payment">行動支付</label>
+                            </div>
+                        <div class="form-group mb-4">
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" name="payment" id="banktransfer">
+                                <label class="custom-control-label" for="banktransfer">銀行轉帳</label>
+                            </div>
+                        </div>
+                        <button class="btn btn-block btn-primary py-3" id="reserveNow">送出訂單</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Booking End -->
+
+
+
+      <!-- Footer Start -->
+      <div class="container-fluid bg-secondary py-5 px-sm-3 px-md-5" style="margin-top: 90px;">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-uppercase text-light mb-4">Get In Touch</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt text-white mr-3"></i>元智大學</p>
+                <p class="mb-2"><i class="fa fa-phone-alt text-white mr-3"></i>0989188906</p>
+                <p><i class="fa fa-envelope text-white mr-3"></i>s1093317@mail.yzu.edu.tw</p>
+                <h6 class="text-uppercase text-white py-2">Follow Us</h6>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="https://www.facebook.com/profile.php?id=100006025894248"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-uppercase text-light mb-4">Payment method</h4>
+                <div class="row mx-n1">
+                    <div class="col-4 px-1 mb-2">
+                        <a href="booking.html"><img class="w-100" src="img/pay-1.jpg" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href="booking.html"><img class="w-100" src="img/pay-2.jpg" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href="booking.html"><img class="w-100" src="img/pay-3.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-uppercase text-light mb-4">Games</h4>
+                <div class="row mx-n1">
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="img/gallery-1.jpg" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="img/gallery-2.jpg" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="img/gallery-3.jpg" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="img/gallery-4.jpg" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="img/gallery-5.jpg" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="img/gallery-6.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark py-4 px-sm-3 px-md-5">
+        <p class="mb-2 text-center text-body">&copy; <a href="#">遊戲帳號交易網站</a>. All Rights Reserved.</p>
+        <p class="m-0 text-center text-body">Designed by <a href="https://htmlcodex.com">HTML Codex</a></p>
+    </div>
+    <!-- Footer End -->
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
