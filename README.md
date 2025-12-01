@@ -45,6 +45,11 @@
 
 ## 系統設計 (System Design)
 
+> **完整文件閱覽**
+> 本專案包含完整的軟體工程規格書，詳細記錄了分析與設計過程，歡迎參閱：
+> * [需求分析規格書 (OOA.pdf)](./docs/OOA.pdf)
+> * [物件導向設計書 (OOD.pdf)](./docs/OOD.pdf)
+
 本專案遵循嚴謹的軟體工程開發流程，從需求分析到詳細設計皆有完整文檔支持。
 
 ### 1. Object-Oriented Analysis (OOA)
@@ -92,7 +97,7 @@ Game_Account_Trading/
 ├── detail.html       # 交易中心 (商品管理 CRUD、下單介面)
 ├── login.html        # 會員入口 (登入與註冊邏輯)
 │
-├── docs/             # 設計文檔圖片 (use_case.png, class_diagram.png 等)
+├── docs/             # 系統設計文件 (包含 OOA.pdf, OOD.pdf 與 UML 架構圖)
 ├── css/              # 樣式表 (包含 Bootstrap 與自定義樣式)
 ├── js/               # 核心邏輯 (包含 Cookie 操作與 DOM 控制)
 ├── img/              # 圖片素材
